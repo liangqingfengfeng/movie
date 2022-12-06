@@ -1,0 +1,28 @@
+html {
+  font-size: 13.3333333333333vw;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #777;
+}
+
+.border-1px {
+  position: relative;
+  &::after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    transform: scale(0.5);
+    transform-origin: left top;
+    box-sizing: border-box;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+  }
+}
